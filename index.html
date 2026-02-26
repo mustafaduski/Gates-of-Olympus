@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gates of Olympus - Telegram Mini App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div class="balance-box">
+                <span class="label">Balance</span>
+                <span class="value" id="balance">1000</span>
+            </div>
+            <div class="bet-box">
+                <span class="label">Bet</span>
+                <div class="bet-controls">
+                    <button class="bet-btn" id="decreaseBet">-</button>
+                    <span class="value" id="currentBet">10</span>
+                    <button class="bet-btn" id="increaseBet">+</button>
+                </div>
+            </div>
+            <div class="win-box" id="winAmount">0</div>
+        </div>
+
+        <div class="slot-machine">
+            <div class="reels-container" id="reelsContainer">
+                <div class="reel" id="reel1"></div>
+                <div class="reel" id="reel2"></div>
+                <div class="reel" id="reel3"></div>
+                <div class="reel" id="reel4"></div>
+                <div class="reel" id="reel5"></div>
+                <div class="reel" id="reel6"></div>
+            </div>
+            
+            <div class="multiplier-indicator" id="multiplier">1x</div>
+            
+            <button class="spin-btn" id="spinBtn">SPIN</button>
+        </div>
+
+        <div class="paytable">
+            <div class="paytable-title">Paytable</div>
+            <div class="symbols-grid">
+                <div class="symbol-item">
+                    <div class="symbol olympus-symbol zeus">⚡</div>
+                    <span>Zeus - 50x</span>
+                </div>
+                <div class="symbol-item">
+                    <div class="symbol olympus-symbol crown">👑</div>
+                    <span>Crown - 25x</span>
+                </div>
+                <div class="symbol-item">
+                    <div class="symbol olympus-symbol hourglass">⌛</div>
+                    <span>Hourglass - 15x</span>
+                </div>
+                <div class="symbol-item">
+                    <div class="symbol olympus-symbol ring">💍</div>
+                    <span>Ring - 10x</span>
+                </div>
+                <div class="symbol-item">
+                    <div class="symbol olympus-symbol scroll">📜</div>
+                    <span>Scroll - 8x</span>
+                </div>
+                <div class="symbol-item">
+                    <div class="symbol olympus-symbol chalice">🏆</div>
+                    <span>Chalice - 5x</span>
+                </div>
+                <div class="symbol-item">
+                    <div class="symbol olympus-symbol gem blue">💎</div>
+                    <span>Blue Gem - 3x</span>
+                </div>
+                <div class="symbol-item">
+                    <div class="symbol olympus-symbol gem green">💚</div>
+                    <span>Green Gem - 2x</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
